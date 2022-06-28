@@ -1,0 +1,188 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	height: 100vh;
+	background: #2c2e38;
+}
+
+nav {
+	height: 10%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	margin: 0px 10px;
+	letter-spacing: .5px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav .fas {
+	cursor: pointer;
+}
+
+nav .fa-th {
+	color: white;
+	font-size: 20px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav .fa-th:hover {
+	background-color: rgba(255,255,255,.1);
+}
+
+nav .fa-user {
+	width: 36px;
+	height: 36px;
+	background: white;
+	border-radius: 50%;
+	font-size: 16px;
+	color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 20px;
+}
+
+nav .fa-user:hover {
+	transform: scale(1.1);
+}
+
+section {
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.top {
+	width: 40%;
+}
+
+.top h1 {
+	font-size: 80px;
+	color: white;
+	letter-spacing: 1px;
+	margin-bottom: 48px;
+	font-weight: 400;
+}
+
+.entry {
+	background: white;
+	border-radius: 30px;
+	padding: 12px;
+	display: flex;
+}
+
+.entry input {
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	margin: 0px 12px;
+	letter-spacing: 1px;
+	color: #2c2c2c;
+}
+
+.entry i {
+	margin: 0px 10px;
+	font-size: 16px;
+	cursor: pointer;
+	color: rgba(0,0,0,.5);
+}
+
+.down {
+	display: flex;
+	margin-top: 32px;
+}
+
+.down i {
+	background: white;
+	border-radius: 50%;
+	font-size: 24px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.container {
+	padding: 20px;
+	border-radius: 10px;
+	margin: 0px 5px;
+}
+
+.container:hover {
+	background-color: rgba(255,255,255,.3);
+	opacity: .85;
+}
+
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-twitter {
+	color: #1DA1F2;
+}
+
+.fa-youtube {
+	color: 	#FF0000;
+}
+
+.fa-plus {
+	color: rgba(0,0,0,.6);
+}
+
+footer {
+	height: 10%;
+	text-align: right;
+}
+
+.fa-pen {
+	color: white;
+	font-size: 12px;
+	padding: 10px;
+	border-radius: 50%;
+	margin: 10px 20px;
+}
+
+footer i:hover {
+	background: rgba(255,255,255,.2);
+}
+
+@media screen and (max-width: 1200px){
+	.top{
+		width: 400px;
+	}
+	
+	.entry input {
+		font-size: 14px;
+	}
+	
+	.container {
+		margin: 3px;
+		padding: 15px;
+	}
+}
