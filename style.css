@@ -203,6 +203,13 @@ footer {
 	
 	.container {
 		margin: 3px;
-		padding: 15px;
+		padding: 20px;
+	}
+
+	.more {
+		right: 2px;
+		top: 2px;
+		width: 24px;
+		height: 24px;
 	}
 }
