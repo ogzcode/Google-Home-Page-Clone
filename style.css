@@ -2,23 +2,22 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 }
 
 body {
 	height: 100vh;
-	background: #2c2e38;
+    background-color: #445760;
 }
 
-nav {
+.nav {
 	height: 10%;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 10px;
 }
 
-nav a {
+.nav__item {
 	text-decoration: none;
 	color: white;
 	font-size: 14px;
@@ -26,17 +25,14 @@ nav a {
 	letter-spacing: .5px;
 }
 
-nav a:hover {
+.nav__item:hover {
 	text-decoration: underline;
 }
 
-nav .fas {
+.nav__icon {
 	cursor: pointer;
-}
-
-nav .fa-th {
 	color: white;
-	font-size: 20px;
+	font-size: 16px;
 	width: 36px;
 	height: 36px;
 	border-radius: 50%;
@@ -45,28 +41,15 @@ nav .fa-th {
 	align-items: center;
 }
 
-nav .fa-th:hover {
+.nav__icon:hover {
 	background-color: rgba(255,255,255,.1);
 }
 
-nav .fa-user {
-	width: 36px;
-	height: 36px;
-	background: white;
-	border-radius: 50%;
-	font-size: 16px;
-	color: grey;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0px 20px;
+.nav__icon:last-child {
+	margin: 0 20px 0 10px;
 }
 
-nav .fa-user:hover {
-	transform: scale(1.1);
-}
-
-section {
+.section {
 	height: 80%;
 	display: flex;
 	justify-content: center;
@@ -75,48 +58,60 @@ section {
 	text-align: center;
 }
 
-.top {
+.top__side {
 	width: 40%;
 }
 
-.top h1 {
+.top__title {
 	font-size: 80px;
 	color: white;
-	letter-spacing: 1px;
 	margin-bottom: 48px;
-	font-weight: 400;
+	font-weight: 600;
 }
 
-.entry {
+.search__bar {
 	background: white;
 	border-radius: 30px;
 	padding: 12px;
 	display: flex;
+	box-shadow: 0px 2px 6px rgba(0,0,0,.2);
 }
 
-.entry input {
+.search__input {
 	width: 100%;
 	font-size: 16px;
 	border: none;
 	outline: none;
 	margin: 0px 12px;
-	letter-spacing: 1px;
 	color: #2c2c2c;
 }
 
-.entry i {
+.search__bar i {
 	margin: 0px 10px;
 	font-size: 16px;
 	cursor: pointer;
 	color: rgba(0,0,0,.5);
 }
 
-.down {
+.down__side {
 	display: flex;
 	margin-top: 32px;
 }
 
-.down i {
+.container {
+	padding: 30px;
+	border-radius: 10px;
+	margin: 0px 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.container:hover {
+	background-color: rgba(255,255,255,.1);
+	box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+}
+
+.icon {
 	background: white;
 	border-radius: 50%;
 	font-size: 24px;
@@ -126,17 +121,7 @@ section {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-}
-
-.container {
-	padding: 20px;
-	border-radius: 10px;
-	margin: 0px 5px;
-}
-
-.container:hover {
-	background-color: rgba(255,255,255,.3);
-	opacity: .85;
+	box-shadow: 0px 2px 6px rgba(0,0,0,.2);
 }
 
 .fa-facebook {
@@ -155,29 +140,64 @@ section {
 	color: rgba(0,0,0,.6);
 }
 
+.more {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background-color: transparent;
+	display: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+}
+
+.more:hover {
+	background-color: rgba(0,0,0,.2);
+}
+
+.fa-ellipsis-vertical {
+	font-size: 14px;
+	color: white;
+}
+
+.container:hover .more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 footer {
 	height: 10%;
-	text-align: right;
+	display: flex;
+	justify-content: flex-end;
 }
 
-.fa-pen {
-	color: white;
-	font-size: 12px;
-	padding: 10px;
+.pen {
 	border-radius: 50%;
-	margin: 10px 20px;
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
+	cursor: pointer;
 }
 
-footer i:hover {
+.pen:hover {
 	background: rgba(255,255,255,.2);
 }
 
+.fa-pen {
+	font-size: 16px;
+	color: white;
+}
+
 @media screen and (max-width: 1200px){
-	.top{
+	.top__side {
 		width: 400px;
 	}
 	
-	.entry input {
+	.search__input {
 		font-size: 14px;
 	}
 	
